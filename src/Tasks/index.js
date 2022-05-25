@@ -9,15 +9,19 @@ const Tasks = (props) => (
         task.done && props.hideDoneTasks ? "tasks__item--hidden" : ""
       }`}
       >
-        <button class="tasks__button tasks__button--done js-done">
+        <button className="tasks__button tasks__button--done js-done">
           {task.done ? "✔" : " "}
         </button>
         <span
-          class={`"tasks__content${task.done ? " tasks__content--done" : ""}"`}
+          className={`"tasks__content${
+            task.done ? " tasks__content--done" : ""
+          }"`}
         >
           {task.content}
         </span>
-        <button class="tasks__button tasks__button--remove js-remove">🗑</button>
+        <button className="tasks__button tasks__button--remove js-remove">
+          🗑
+        </button>
       </li>
     ))}
   </ul>
