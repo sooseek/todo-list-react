@@ -1,4 +1,5 @@
 import "./App.css";
+import Form from "./Form";
 
 const tasks = [
   { id: 1, content: "przejść na Reacta", done: false },
@@ -15,14 +16,7 @@ function App() {
         <header className="section__header">
           <h2 className="section__title">Dodaj nowe zadanie</h2>
         </header>
-        <form className="form">
-          <input
-            className="form__input"
-            placeholder="Co jest do zrobienia?"
-            autofocus
-          />
-          <button className="form__button">Dodaj zadanie</button>
-        </form>
+        <Form />
       </section>
       <section className="section">
         <header className="section__header">
