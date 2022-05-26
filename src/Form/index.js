@@ -12,6 +12,8 @@ const Form = ({ addNewTask }) => {
     <form className="form" onSubmit={onFormSubmit}>
       <input
         value={newTaskContent}
+        type="text"
+        required
         onChange={({ target }) => setNewTaskContent(target.value)}
         className="form__input"
         placeholder="Co jest do zrobienia?"
